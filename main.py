@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from langchain.chat_models import ChatOpenAI
 from langchain.schema import SystemMessage, HumanMessage
+from langchain_openai import ChatOpenAI
 import os
 
 # Load API key từ biến môi trường (hoặc hardcode nếu muốn)
